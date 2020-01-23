@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/ArtificialIntelligence32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/ArtificialIntelligence16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="5IoOHPeK1Gs6LKpb_pJOXhrUePDQUxzqf0hPjeAzdLo">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('http://jiayaoO3O.github.io').hostname,
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.6.0',
+    exturl: false,
+    sidebar: {"position":"left","width":256,"display":"post","padding":16,"offset":14,"onmobile":false},
+    copycode: {"enable":true,"show_result":true,"style":"flat"},
+    back2top: {"enable":true,"sidebar":true,"scrollpercent":true},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="为什么要写这个数学笔记 我上大学遇到的高数老师 , 叫邝雪松 , 他是我认为的 , 我在大学遇到过的最厉害 , 最有激情 , 最会教课的老师 . 他的讲课风格非常厉害而且通俗易懂 , 基本完全放弃PPT . 每节他的课 , 前面几排都是要抢着去的 , 比其他那些只知道念课件的老师不知道强到哪里去了. 我非常钦佩他的上课水平 , 并且当时的我较为详细地将他的讲课内容记录到了笔记本中 , 在16年末到">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数学笔记-第零章-一切的开始">
+<meta property="og:url" content="http://jiayaoo3o.github.io/2019/12/24/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0-%E7%AC%AC%E9%9B%B6%E7%AB%A0-%E4%B8%80%E5%88%87%E7%9A%84%E5%BC%80%E5%A7%8B/index.html">
+<meta property="og:site_name" content="jiayaoO3O&#39;s Blog">
+<meta property="og:description" content="为什么要写这个数学笔记 我上大学遇到的高数老师 , 叫邝雪松 , 他是我认为的 , 我在大学遇到过的最厉害 , 最有激情 , 最会教课的老师 . 他的讲课风格非常厉害而且通俗易懂 , 基本完全放弃PPT . 每节他的课 , 前面几排都是要抢着去的 , 比其他那些只知道念课件的老师不知道强到哪里去了. 我非常钦佩他的上课水平 , 并且当时的我较为详细地将他的讲课内容记录到了笔记本中 , 在16年末到">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2019/12/26/UJCGe4xFOVEqjWL.png">
+<meta property="og:image" content="https://i.loli.net/2019/12/26/1Zragc4NLPztKGq.png">
+<meta property="og:image" content="https://i.loli.net/2019/12/26/XMGF5qzI4KhZWPa.png">
+<meta property="og:image" content="https://i.loli.net/2019/12/26/owVKLiyRQxYItu7.png">
+<meta property="article:published_time" content="2019-12-24T08:27:56.000Z">
+<meta property="article:modified_time" content="2020-01-23T02:42:05.946Z">
+<meta property="article:author" content="jiayao">
+<meta property="article:tag" content="广东海洋大学">
+<meta property="article:tag" content="高等数学">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2019/12/26/UJCGe4xFOVEqjWL.png">
+
+<link rel="canonical" href="http://jiayaoo3o.github.io/2019/12/24/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0-%E7%AC%AC%E9%9B%B6%E7%AB%A0-%E4%B8%80%E5%88%87%E7%9A%84%E5%BC%80%E5%A7%8B/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>数学笔记-第零章-一切的开始 | jiayaoO3O's Blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet" /></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">jiayaoO3O's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <h1 class="site-subtitle" itemprop="description">sudo reboot</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://jiayaoo3o.github.io/2019/12/24/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0-%E7%AC%AC%E9%9B%B6%E7%AB%A0-%E4%B8%80%E5%88%87%E7%9A%84%E5%BC%80%E5%A7%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/pic.jpg">
+      <meta itemprop="name" content="jiayao">
+      <meta itemprop="description" content="实习摸鱼,随缘更新">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jiayaoO3O's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          数学笔记-第零章-一切的开始
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-12-24 16:27:56" itemprop="dateCreated datePublished" datetime="2019-12-24T16:27:56+08:00">2019-12-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-01-23 10:42:05" itemprop="dateModified" datetime="2020-01-23T10:42:05+08:00">2020-01-23</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index">
+                    <span itemprop="name">数学笔记</span>
+                  </a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/%E7%AC%AC%E9%9B%B6%E7%AB%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">第零章</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="为什么要写这个数学笔记">为什么要写这个数学笔记</h2>
+<p>我上大学遇到的高数老师 , 叫邝雪松 , 他是我认为的 , 我在大学遇到过的最厉害 , 最有激情 , 最会教课的老师 . 他的讲课风格非常厉害而且通俗易懂 , 基本完全放弃PPT . 每节他的课 , 前面几排都是要抢着去的 , 比其他那些只知道念课件的老师不知道强到哪里去了.</p>
+<p>我非常钦佩他的上课水平 , 并且当时的我较为详细地将他的讲课内容记录到了笔记本中 , 在16年末到17年初 , 刚好准备过年的时候 , 制作了第一版word文档的数学笔记 :</p>
+<p><img src="https://i.loli.net/2019/12/26/UJCGe4xFOVEqjWL.png" alt=""></p>
+<a id="more"></a>
+<p>那时候的心情是非常开心的 , 但是这些数学笔记 , 基本没有给多少人看过 , 也没放到网上去 , 写完这一版之后 , 就一直放着没动过了.</p>
+<p>到了现在19年年末准备过年了 , 我准备毕业了 , 突然想起还有这些东西 , 放在Onedrive上面吃灰 , 所以心血来潮又想要将这些数学笔记重新整理发布到博客上面 , 尽管应该也没啥人看 , 但是起码能让有机会见到的人 , 知道海洋大学还有一个这么好的数学老师.</p>
+<p>当时大一用word写的数学笔记 , 很多用公式的地方基本都是直接截图 , 虽然内容没问题 , 但是样式比较丑 :</p>
+<p><img src="https://i.loli.net/2019/12/26/1Zragc4NLPztKGq.png" alt=""></p>
+<p>现在要用markdown重新写 , 肯定就不能直接截图往上怼了 , 所以我决定所有公式都用LaTex来写 :</p>
+<p><img src="https://i.loli.net/2019/12/26/XMGF5qzI4KhZWPa.png" alt=""></p>
+<p>算是有始有终 , 虽然内容都是偏考试解题技巧 , 对原理和理论涉及不多 , 希望这些知识能够帮到某个大一新生 , 如果你也是广东海洋大学的大一新生 , 记得去听邝雪松老师的课.</p>
+<h2 id="通过什么工具链将这些数学笔记发布到的github的">通过什么工具链将这些数学笔记发布到的Github的</h2>
+<ul>
+<li>Github Page 存放静态博客</li>
+<li>Hexo 生成博客页面</li>
+<li>Github Actions 自动生成与部署</li>
+<li>VSCode 基本上用来push到Github</li>
+<li>Typora 编辑markdown</li>
+</ul>
+<p>博客本身是用Hexo发布在Github Page上面的 , 写数学笔记难就难在这些公式怎么写出来的  ,  因为我完全不会LaTex , 本来是想着放弃的 , 但是居然让我找到了<a href="http://www.wiris.com/editor/demo/zh/developers#toolbars" target="_blank" rel="noopener">这个网站</a> , 能够手写公式识别成LaTex :</p>
+<p><img src="https://i.loli.net/2019/12/26/owVKLiyRQxYItu7.png" alt=""></p>
+<p>最麻烦的一步解决了之后 , 剩下的就是耐性了.</p>
+<h2 id="发现文章的错误">发现文章的错误</h2>
+<p>可以直接在Github上面提issues或者直接在博客页面发邮件给我 , 基本上都能直接联系到我.</p>
+<h2 id="想要转载">想要转载</h2>
+<p>完全不用通知我 , 直接复制文章底下那段版权声明 , 然后粘贴到你转载的文章里就可以了.</p>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div></div>
+  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="jiayao 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="jiayao 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>jiayao
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://jiayaoo3o.github.io/2019/12/24/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0-%E7%AC%AC%E9%9B%B6%E7%AB%A0-%E4%B8%80%E5%88%87%E7%9A%84%E5%BC%80%E5%A7%8B/" title="数学笔记-第零章-一切的开始">http://jiayaoo3o.github.io/2019/12/24/数学笔记-第零章-一切的开始/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-ND</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/%E5%B9%BF%E4%B8%9C%E6%B5%B7%E6%B4%8B%E5%A4%A7%E5%AD%A6/" rel="tag"><i class="fa fa-tag"></i> 广东海洋大学</a>
+              <a href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" rel="tag"><i class="fa fa-tag"></i> 高等数学</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2019/12/21/Hexo%E9%80%9A%E8%BF%87GitHubActions%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E5%8F%91%E5%B8%83/" rel="prev" title="Hexo通过GitHub Actions持续集成发布">
+      <i class="fa fa-chevron-left"></i> Hexo通过GitHub Actions持续集成发布
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2019/12/25/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%9E%81%E9%99%90/" rel="next" title="数学笔记-第一章-极限">
+      数学笔记-第一章-极限 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么要写这个数学笔记"><span class="nav-text">为什么要写这个数学笔记</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#通过什么工具链将这些数学笔记发布到的github的"><span class="nav-text">通过什么工具链将这些数学笔记发布到的Github的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#发现文章的错误"><span class="nav-text">发现文章的错误</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#想要转载"><span class="nav-text">想要转载</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="jiayao"
+      src="/images/pic.jpg">
+  <p class="site-author-name" itemprop="name">jiayao</p>
+  <div class="site-description" itemprop="description">实习摸鱼,随缘更新</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">120</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">30</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/jiayaoO3O" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;jiayaoO3O" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:jiayao3.14@outlook.com" title="E-Mail → mailto:jiayao3.14@outlook.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">jiayao</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.getAttribute('pjax') !== null) {
+      element.setAttribute('pjax', '');
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+  <script pjax>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="pjax">
+
+  
+
+  
+
+  
+
+    </div>
+</body>
+</html>
